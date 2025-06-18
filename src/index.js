@@ -26,8 +26,7 @@ app.listen(3001, async () => {
 
   // console.log(tweet);
 //  
-
 const tweetRepo= new TweetRepository();
-const tweet= await tweetRepo.getWithComments('68527029bde23057e63f6299');
-console.log(tweet);
+const tweet= await tweetRepo.getAll(0,4);
+console.log(tweet[0].id);// this id is virtual only , id is not present in mongodb , _id is there it is virtual
 });
