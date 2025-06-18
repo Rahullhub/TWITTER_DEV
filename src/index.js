@@ -12,21 +12,11 @@ app.listen(3001, async () => {
   await connect();
 
   console.log("mongodb connected");
-  //    const tweet= await Tweet.create({
-  //        content:'first tweet',
-  //        userEmail:'a@b.com'
-  //    })
-  //    console.log(tweet)
-  // const tweet= await Tweet.create({
-  //     content:'first comment here'
-  // });
-  // console.log(tweet);
-  // tweet.comments.push({content:'first comment here'});
-  // await tweet.save();
-
-  // console.log(tweet);
+ 
 //  
-const tweetRepo= new TweetRepository();
-const tweet= await tweetRepo.getAll(0,4);
-console.log(tweet[0].id);// this id is virtual only , id is not present in mongodb , _id is there it is virtual
+// const tweetRepo= new TweetRepository();
+// const tweet= await tweetRepo.getAll(0,4);
+// console.log(tweet[0].id);// this id is virtual only , id is not present in mongodb , _id is there it is virtual
+
+
 });
