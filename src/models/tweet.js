@@ -29,3 +29,8 @@ tweetSchema.pre('save',function(next){
 
 const Tweet = mongoose.model("Tweet", tweetSchema);
 module.exports=Tweet;
+
+
+
+
+//id is predefined index in mongodb
